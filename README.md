@@ -14,11 +14,17 @@ At this point, you can finally interpret all arguments! You will want to call th
 List of values that are returned when using SimplifyArgs():
 
 String - "No command-line arguments have been specified."
+
 String - "One or more flags have been specified incorrectly."
+
 String - "Duplicate flags found although duplicate flags are disallowed."
+
 String - "You can not specify raw arguments without a flag after arguments specified with both a flag and its value."
+
 String - "You can not specify raw arguments without a flag, due to the option being disabled."
+
 String - "A specified flag is missing its value."
+
 List<dynamic> - AllArguments
   
 Wait, why does it "List<dynamic>" and not "List<WhateverType>"? Well, the list actually can contain both lists of string type or just simply a string. Raw arguments will be placed into the list as a string, while arguments with specified flags will be a List of string type. The first argument of this sub-list will be the flag specified WITHOUT the dash at the start, while the second argument of this sub-list will be value of the argument specified.
