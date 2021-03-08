@@ -25,8 +25,8 @@ String - "You can not specify raw arguments without a flag, due to the option be
 
 String - "A specified flag is missing its value."
 
-List<dynamic> - AllArguments
+List of dynamic type - AllArguments
   
-Wait, why does it "List<dynamic>" and not "List<WhateverType>"? Well, the list actually can contain both lists of string type or just simply a string. Raw arguments will be placed into the list as a string, while arguments with specified flags will be a List of string type. The first argument of this sub-list will be the flag specified WITHOUT the dash at the start, while the second argument of this sub-list will be value of the argument specified.
+Wait, why does it list of dynamic type and not some other object type? Well, the list actually can contain both lists of string type or just simply a string. Raw arguments will be placed into the list as a string, while arguments with specified flags will be a List of string type. The first argument of this sub-list will be the flag specified WITHOUT the dash at the start, while the second argument of this sub-list will be value of the argument specified.
   
 Leave a comment if you have any suggestions, and have fun!
